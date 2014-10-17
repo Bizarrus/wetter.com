@@ -44,6 +44,14 @@
 			$this->credits = $credits;
 		}
 		
+		public function isEmpty() {
+			return $this->countResults() == 0;
+		}
+		
+		public function countResults() {
+			return count($this->results);
+		}
+		
 		public function getResults() {
 			return $this->results;
 		}

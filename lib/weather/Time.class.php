@@ -68,6 +68,31 @@
 			$this->temperature_maximum = $temperature;
 		}
 		
+		public function isNight() {
+			return !$this->isDay();
+		}
+		
+		public function isDay() {
+			$time	= date('H', $this->getUnixTimestamp());
+			return ($time >= 6 && $time <= 18);
+		}
+		
+		public function getConditionsIcon() {
+			$buffer = new StringBuffer();
+			
+			if($this->isDay()) {
+				$buffer->append('d');
+			} else if($this->isNight()) {
+				$buffer->append('n');
+			}
+			
+			$buffer->append('_');
+			$buffer->append($this->getConditionsCode());
+			$buffer->append('_L.png');
+			
+			return $buffer->toString();
+		}
+		
 		public function getConditionsText() {
 			return $this->condition_text;
 		}
@@ -76,8 +101,12 @@
 			$this->condition_text = $text;
 		}
 		
-		public function getConditionsCode() {
-			return $this->condition_code;
+		public function getConditionsCode($first_number = false) {
+			if($first_number === false) {
+				return $this->condition_code;
+			}
+			
+			return substr($this->condition_code, 0, 1);
 		}
 		
 		public function setConditionsCode($code) {

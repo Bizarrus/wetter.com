@@ -36,6 +36,10 @@
 			$this->credits = $credits;
 		}
 		
+		public function getCity() {
+			return $this->city;
+		}
+		
 		public function setCity($city) {
 			$this->city = $city;
 		}
