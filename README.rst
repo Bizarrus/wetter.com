@@ -9,6 +9,7 @@ PHP Library for wetter.com
 ****************************************
 
 This Library project provides all relevant methods to work with the wetter.com API
+Please see our (Wiki)[https://github.com/hovida/wetter.com/wiki] for Help, Documentation, Examples and Informations!
 
 ====================   ========================================================
 Website    				http://www.adi-code.de/
