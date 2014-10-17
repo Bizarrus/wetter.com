@@ -12,5 +12,5 @@ This Library project provides all relevant methods to work with the wetter.com A
 
 ====================   ========================================================
 Website    				http://www.adi-code.de/
-						http://www.wetter.com/
+API Provider    		http://www.wetter.com/
 ====================   ========================================================
