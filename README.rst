@@ -17,7 +17,6 @@ Please see our `Wiki <https://github.com/hovida/wetter.com/wiki>`_ for Help, Doc
 
 :Version: 1.0.0
 
-====================   ========================================================
-Website    				http://www.adi-code.de/
-API Provider    		http://www.wetter.com/
-====================   ========================================================
+:Website: http://www.adi-code.de/
+
+:API Provider: http://www.wetter.com/
